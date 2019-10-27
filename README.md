@@ -17,4 +17,5 @@ using HTML DOM, and JS to create elements and style them.
 5. then copy the text into edite text and start edite.
 
 
-#app Image
+# app Image
+<img src="noCode.JPG" alt="noCode Editor">
