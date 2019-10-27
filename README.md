@@ -20,7 +20,7 @@ using HTML DOM, and JS to create elements and style them.
 # app Image
 <img src="noCode.JPG" alt="noCode Editor">
 
-<img src="photo1.JPG" alt="noCode Editor">
+<img src="photo2.JPG" alt="noCode Editor">
 
 
 # Author Mahmoud Magdy
