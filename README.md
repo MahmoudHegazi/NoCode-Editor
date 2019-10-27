@@ -19,3 +19,7 @@ using HTML DOM, and JS to create elements and style them.
 
 # app Image
 <img src="noCode.JPG" alt="noCode Editor">
+
+
+# Author Mahmoud Magdy
+<img src='https://avatars2.githubusercontent.com/u/55125302?s=96&v=4'>
