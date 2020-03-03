@@ -27,8 +27,8 @@ using HTML DOM, and JS to create elements and style them.
 * if you need to style the elements then you have to add the text before click run1 or run2.
 
 ## next update:
-I will working on import the DOM of the nodes and the current style after user finish to adatabase 
-then paste them into HTML file to give it back for him 
+I will working on export the DOM of the nodes and the current style after user finish to adatabase 
+then paste them into HTML file to give it back for him adding more options and nav bar I need make it Like wix.com
 
 # app Image
 <img src="noCode.JPG" alt="noCode Editor">
