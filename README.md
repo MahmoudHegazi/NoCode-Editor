@@ -16,6 +16,11 @@ using HTML DOM, and JS to create elements and style them.
 4. to style your header or pargraph create header 
 5. then copy the text into edite text and start edite.
 
+## notes (Read It)
+
+* Run 1 change heading style.
+* Run 2 change P style.
+* if you need to style the elements then you have to add the text before click run1 or run2.
 
 # app Image
 <img src="noCode.JPG" alt="noCode Editor">
