@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+
+}
+
+#div1 {
+  width: 755px;
+  height: 1000px;
+  margin-top: 5px;
+  border: 2px solid gray;
+  
+}
+
+input {
+  width: 80px;
+  margin: 2px 7px;
+  background-color: black;  
+  color: white;
+  border: none;
+ 
+}
+
+input#editeText {
+   width: 400px;
+   height: 30px;
+   text-align: center;
+   background-color: rgb(10 55 55);
+   font-weight: bold;
+   color: white;
+}
+
+#myValue {
+  width: 500px;
+  padding: 10px;
+  background-color: rgb(250 250 10);
+  font-weight: bold;
+}
+
+#mcreate {
+  margin: 8px 1px;
+  border: 2px solid black;
+  padding: 12px;
+  background-color:black;
+  width: 730px;
+}
+
+#style {
+  margin: 8px 1px;
+  border: 2px solid black;
+  padding: 12px;
+  background-color:black;
+  width: 730px;
+}
+
+.note {
+  margin-left: 30%;
+  width: 400px;
+  background-color: rgb(250 245 250);
+}
+
+/* placeholder color */
+
+::-webkit-input-placeholder { /* Edge */
+  color: red;
+  font-weight: bold;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: red;
+  font-weight: bold;
+}
+
+::placeholder {
+  color: red;
+  font-weight: bold;
+}
+
+/*End */ 
+
+#mylink {
+  padding-left: 5px;
+}
+
+#mcreate button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+#style button {
+    background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+.img_styleb {
+  
+  width: 35px;
+}
+
+#editeImageS {
+  margin-left: 10px;
+}
+
+#border {
+  border: 4px solid gold;
+  border-bottom: 0px;
+  border-top: 0px;
+  padding-left: 4px;
+  color: yellow;
+}
+</style>
+</head>
+<body>
+<p class="note cre">Create Header and Paragraph</p>
+<div id="mcreate" >
+<textarea  id="myValue" value="" title="first Create The element with no style if You want Style Your Text You Must copy it at Edit text and run before edit
+">
+
+
+</textarea>
+
+<br>
+<button onclick="addImage()" title="headerImage">Add Image</button>
+
+
+<button type="button" onclick="myFunction()">Add Header</button>
+<button type="button" onclick="myFunction1()">Add Paragraph</button>
+<br>
+<input id="mylink" value="" placeholder="Image Link" title="headerImage">
+<br>
+
+</div>
+
+
+<p class="note sty">edited and Style Your first Div</p>
+<div id="style">
+
+
+
+<input id="myColor" value="" placeholder="Text Color">
+<input id="webpageBC" value="" placeholder="pageColor">
+<input id="mybg" value="" placeholder="background">
+<input id="mWidth" value="" placeholder="P width">
+<input id="mMargin" value="" placeholder="Margin">
+<input id="mPadding" value="" placeholder="Padding">
+<input id="malign" value="" placeholder="Text Algin">
+<br>
+<input id="editeText" value="" placeholder="Edite Text">
+
+<button type="button" onclick="giveID()">Run1</button>
+<button type="button" onclick="style1()">Run2</button>
+<br><br>
+
+
+
+
+<div id="editeImageS">
+<button onclick="editeImage()">Edite Image</button>
+<input class="img_style" id="iWidth" value="" placeholder="Img Width">
+<input class="img_style" id="iHeight" value="" placeholder="Img Height">
+<input class="img_style" id="iRadius" value="" placeholder="Img Raduis">
+
+<span id="border">
+Border:
+<input class="img_styleb" id="bWidth" value="" placeholder="width">
+<input class="img_styleb" id="bType" value="" placeholder="type">
+<input class="img_styleb" id="bColor" value="" placeholder="color">
+</span>
+</div>
+
+</div>
+
+
+
+
+
+<div id="div1">
+<img id="myImage" src="" style="display:none;" >
+</div>
+
+<script>
+
+
+var text = document.getElementById("myValue");
+var myColor = document.getElementById("myColor");
+var myBackground = document.getElementById("mybg");
+var myWidth = document.getElementById("mWidth");
+var myMargin = document.getElementById("mMargin");
+var myPadding = document.getElementById("mPadding");
+var myalign = document.getElementById("malign");
+var webpage = document.getElementById("webpageBC");
+var editeText = document.getElementById("editeText");
+var ImageRadius = document.getElementById("iRadius");
+var ImageWidth = document.getElementById("iWidth");
+var ImageHeight = document.getElementById("iHeight");
+var bwidth = document.getElementById("bWidth");
+var btype = document.getElementById("bType");
+var bcolor = document.getElementById("bColor");
+
+
+var index = null;
+function myFunction() {
+/*Tools*/
+
+
+/*Create Header 1 */
+/*index = null*/
+if (index != 0 && index != 1) {
+var para = document.createElement("h1");
+var node = document.createTextNode(text.value);
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(para)
+index += 1;
+para.id = "newP";
+
+}  else {
+  myFunction().stop; /* stop the function create more elements based on index*/ 
+}
+
+
+}
+
+
+/*Header 1 Tools  Run1*/
+function giveID() {
+
+
+var x = document.getElementById("div1");
+var z = document.getElementById("newP");
+
+
+
+x.style.background = webpage.value;
+z.innerHTML = editeText.value;
+z.style.color = myColor.value;
+z.style.backgroundColor = myBackground.value;
+z.style.width = myWidth.value;
+z.style.margin = myMargin.value;
+z.style.padding = myPadding.value;
+z.style.textAlign = myalign.value;
+
+
+}
+
+
+/*Create Header 2 */
+
+function myFunction1() {
+/*Tools*/
+
+
+/* index = 1 */
+if (index > 0 && index < 2) {
+var para = document.createElement("p");
+var node = document.createTextNode(text.value);
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(para)
+index += 1;
+para.id = "myP";
+
+} else {
+  myFunction1().stop;  /* stop the function create more elements */
+}
+
+
+
+
+
+}
+
+/*Header 2 Tools  Run2*/
+
+function style1() {
+
+
+var x = document.getElementById("div1");
+var y = document.getElementById("myP");
+
+y.style.color = myColor.value;
+y.style.background = myBackground.value;
+y.style.width = myWidth.value;
+y.style.margin = myMargin.value;
+y.style.padding = myPadding.value;
+y.style.textAlign = myalign.value;
+x.style.background = webpage.value;
+y.innerHTML = editeText.value;
+}
+
+
+function addImage() {
+
+ 
+ var image = document.getElementById("mylink");  
+  document.getElementById("myImage").src = image.value;
+  document.getElementById("myImage").style.display = "block";
+}
+
+function editeImage() {
+
+   var x = document.getElementById("myImage");
+   var image = document.getElementById("myImage");   
+   x.style.borderRadius = ImageRadius.value;
+   x.style.width = ImageWidth.value;
+   x.style.width = ImageWidth.value + "px";
+   x.style.height = ImageHeight.value;
+   x.style.height = ImageHeight.value + "px";
+   x.style.border = bwidth.value + "px" + " " +  btype.value + " " + bcolor.value;
+   x.style.border = bwidth.value +  " " +  btype.value + " " + bcolor.value;
+   
+  
+}
+
+
+</script>
+
+
+</body>
+</html>
