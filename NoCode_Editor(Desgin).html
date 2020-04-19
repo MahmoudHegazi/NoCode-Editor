@@ -567,7 +567,7 @@ onclick="getheadimage = this.src">
 <!-- End select for head font Size -->
 
  <span style="color:white">Custom Font Size:</span>
-<input type="number" id="headcustomsize" style="background-color:white;color:black;">
+<input type="number" id="customheadfont" style="background-color:white;color:black;">
 <span style="color:white;">(In Pixel)</span>
 <br /><br />
 <!-- Start select for header width -->
@@ -719,6 +719,7 @@ let headwidth = document.getElementById("myheadwidth");
 
 let headFontSize = document.getElementById("headfontsize");
 
+let customHeadFont = document.getElementById("customheadfont");
 
 
 /* guide function */
@@ -838,6 +839,9 @@ z.style.borderRadius = headBorderRaduis.value;
 z.style.width = headwidth.value + "%";
 
 z.style.fontSize = headFontSize.value;
+  
+z.style.fontSize = customHeadFont.value + "px";
+  
 
 /* new 
 
