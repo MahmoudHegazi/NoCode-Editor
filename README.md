@@ -35,6 +35,9 @@ then paste them into HTML file to give it back for him adding more options and n
 
 <img src="photo2.JPG" alt="noCode Editor">
 
+# Last Update
+<img src="lastupdate.JPG" alt="noCode Editor">
+
 
 # Author Mahmoud Magdy
 <img src='https://avatars2.githubusercontent.com/u/55125302?s=96&v=4'>
